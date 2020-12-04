@@ -1,0 +1,134 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #ecf3f6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+ul.navbar {
+    background-color: #2ea2bf;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,.1);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar > li {
+    display: inline;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.navbar a {
+    color: #fff;
+    display: inline-block;
+    padding: 25px 60px;
+    text-decoration: none;
+}
+
+.navbar li:hover {
+    opacity: 1;
+}
+
+.news-main-title {
+    font-size: 48px;
+    text-align: center;
+}
+
+.news-card-container {
+    overflow-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 4px 4px grey;
+}
+
+.news-image {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.news-text-container {
+    padding: 0 10px 0 10px;
+}
+
+.news-content {
+    text-align: justify;
+}
+
+.news-container {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-content: center;
+}
+
+.news-date {
+    font-size: 13px;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #2ea2bf;
+  }
+  
+.footer-wrapper {
+    margin: 0 auto 0 auto;
+    width: min-content;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-column-gap: 80px;
+    padding: 5px;
+    white-space: nowrap;
+}
+
+@media screen and (min-width: 1024px) {
+    .footer-wrapper {
+        grid-template-columns: min-content min-content;
+    }
+}
+
+.footer-wrapper div p span {
+    display: block;
+    font-weight: bold;
+}
+
+.footer-wrapper div p {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.news-more {
+    text-align: center;
+}
+
+.news-more .news-more-button {
+    background-color: #2ea2bf;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 12px;
+}
+
+.news-more .news-more-button:hover {
+    background-color: darkblue;
+    transition: 0.5s all;
+}
+
+.news-more .news-more-button:hover::after {
+    position: relative;
+    left: 10px;
+    right: 10px;
+    content: '\002192';
+}
