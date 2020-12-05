@@ -13,6 +13,10 @@ app.get('/atividade', function(req, res) {
   res.sendFile(__dirname + "/atividade.html");
 });
 
+app.get('/post', function(req, res) {
+  res.sendFile(__dirname + "/post.html");
+});
+
 app.get('/noticias', function(req, res) {
   res.sendFile(__dirname + "/noticias.html");
 });
