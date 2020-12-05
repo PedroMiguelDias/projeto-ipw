@@ -54,7 +54,7 @@ ul.navbar {
 }
 
 .news-image {
-    width: 400px;
+    width: 350px;
     height: 250px;
     object-fit: cover;
 }
@@ -70,7 +70,7 @@ ul.navbar {
 .news-container {
     display: grid;
     grid-column-gap: 50px;
-    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-columns: repeat(auto-fit, 350px);
     justify-content: center;
 }
 
