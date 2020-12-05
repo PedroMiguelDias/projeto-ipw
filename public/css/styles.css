@@ -41,6 +41,10 @@ ul.navbar {
     text-align: center;
 }
 
+#news-section {
+    margin-bottom: 50px;
+}
+
 .news-card-container {
     overflow-wrap: break-word;
     display: flex;
@@ -54,7 +58,7 @@ ul.navbar {
 }
 
 .news-image {
-    width: 350px;
+    width: 450px;
     height: 250px;
     object-fit: cover;
 }
@@ -69,8 +73,8 @@ ul.navbar {
 
 .news-container {
     display: grid;
-    grid-column-gap: 50px;
-    grid-template-columns: repeat(auto-fit, 350px);
+    grid-gap: 50px;
+    grid-template-columns: repeat(auto-fit, 450px);
     justify-content: center;
 }
 
@@ -79,9 +83,9 @@ ul.navbar {
 }
 
 footer {
-    margin-top: auto;
     background-color: #2ea2bf;
-  }
+    margin-top: auto;
+}
   
 .footer-wrapper {
     margin: 0 auto 0 auto;
