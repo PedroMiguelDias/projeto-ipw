@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/PedroMiguelDias/projeto-ipw/issues"
   },
-  "homepage": "https://github.com/PedroMiguelDias/projeto-ipw#readme"
+  "homepage": "https://github.com/PedroMiguelDias/projeto-ipw#readme",
+  "dependencies": {
+    "ejs": "^3.1.5"
+  }
 }
