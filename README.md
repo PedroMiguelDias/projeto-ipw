@@ -3,7 +3,9 @@
 ## Requirements
 
 Node.js => 14.x or greater
+
 Npm => 6.x or greater
+
 Nodemon installed globally.
 
 ## Running it locally
