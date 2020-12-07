@@ -90,9 +90,11 @@
 
 .news-date {
   font-size: 13px;
+  font-style: italic;
 }
 
 .news-more {
+  margin-top: 30px;
   text-align: center;
 }
 
@@ -110,7 +112,7 @@
   width: 230px;
 }
 
-.news-more-button a {
+.news-more-button {
   cursor: pointer;
   position: relative;
   transition: 0.5s;
@@ -118,11 +120,10 @@
   color: #fff;
 }
 
-.news-more-button a::after {
+.news-more-button:after {
   content: '\002192';
   position: absolute;
   opacity: 0;
-  top: 0;
   transition: 0.5s;
   padding-left: 10px;
 }
@@ -131,12 +132,7 @@
   padding-right: 25px;
 }
 
-.news-more-button:hover a:after {
+.news-more-button:hover:after {
   opacity: 1;
 }
 
-.news-link {
-  width: 100%;
-  height: 100%;
-  z-index: 999;
-}
