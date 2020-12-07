@@ -47,6 +47,7 @@
 }
 
 .post-like {
+  cursor: pointer;
   margin-top: 15px;
   grid-area: post-like;
   grid-row-start: 3;
