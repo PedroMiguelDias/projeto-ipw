@@ -1,0 +1,68 @@
+#post-section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.post-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1024px));
+  justify-content: center;
+  padding: 15px;
+}
+
+.post-title-container {
+  background-color: #2ea2bf;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.post-title-container a {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.post-user-image {
+  grid-area: post-image;
+  width: 70px;
+  height: 70px;
+}
+
+.post-user-name {
+  grid-area: post-user-name;
+  font-weight: bold;
+}
+
+.post-body {
+  grid-area: post-body;
+}
+
+.post-date {
+  font-style: italic;
+  margin-top: 15px;
+  grid-area: post-date;
+  grid-column-start: 1;
+}
+
+.post-like {
+  margin-top: 15px;
+  grid-area: post-like;
+  grid-row-start: 3;
+  grid-column-start: 3;
+}
+
+.post-card-container {
+  border: 1px solid #d1d1d1;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: grid;
+  grid-template-areas:
+    'post-image post-user-name'
+    'post-image post-body'
+    'post-date post-date'
+    'post-like post-like';
+  grid-column-gap: 20px;
+  padding: 15px;
+}

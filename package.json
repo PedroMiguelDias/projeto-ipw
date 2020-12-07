@@ -1,9 +1,13 @@
 {
   "name": "projeto-ipw",
   "version": "1.0.0",
+  "engines": {
+    "node": "14.x"
+  },
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/PedroMiguelDias/projeto-ipw/issues"
   },
-  "homepage": "https://github.com/PedroMiguelDias/projeto-ipw#readme"
+  "homepage": "https://github.com/PedroMiguelDias/projeto-ipw#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6"
+  }
 }
