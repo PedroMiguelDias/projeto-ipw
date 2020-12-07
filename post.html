@@ -6,8 +6,9 @@
 	<title>Post</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/posts-detail.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/posts-detail.css">
+	<link rel="stylesheet" href="css/comments.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
 <body>
@@ -18,23 +19,27 @@
 		<li class="menu-link"><a href="noticias">Notícias</a></li>
 		<li class="menu-link"><a href="atividade">Atividade</a></li>
 		<li class="menu-link"><a href="sobre-nos">Sobre Nós</a></li>
-		<li class="menu-link"><a href="post">Post (temporário)</a></li>
 	</ul>
 </nav>
 
-<section id="post-section">
+<section id="post-comment-section">
 	<div class="post-container">
+		<div class="post-title-container">
+			<a href="post">Post Title</a>
+		</div>
 		<div class="post-card-container">
-			<h2 class="post-title">Post Title</h2>
 			<img class="post-user-image" src="img/user.png" alt="Imagem do utilizador">
 			<p class="post-user-name">Pedro Dias</p>
 			<span class="post-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu
-				lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique
-				senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et,
-				sagittis ac, posuere eu, lectus.
+			lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique
+			senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et,
+			sagittis ac, posuere eu, lectus.
 			</span>
 			<span class="post-date">
 				23/11/2020
+			</span>
+			<span class="post-like">
+				<i class="far fa-heart"></i>
 			</span>
 		</div>
 	</div>
@@ -46,68 +51,68 @@
 
 	<div class="comment-main-container">
 		<div class="comment-card-container">
-			<img class="post-user-image" src="img/user.png" alt="Imagem do utilizador">
-			<p class="post-user-name">Pedro Dias</p>
-			<span class="post-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu
+			<img class="comment-user-image" src="img/user.png" alt="Imagem do utilizador">
+			<p class="comment-user-name">Pedro Dias</p>
+			<span class="comment-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu
 				lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique
 				senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et,
 				sagittis ac, posuere eu, lectus.
 			</span>
-			<span class="post-date">
+			<span class="comment-date">
 				23/11/2020
 			</span>
-			<span class="post-like">
+			<span class="comment-like">
 				<i class="far fa-heart"></i>
 			</span>
 		</div>
 		<hr>
 
 		<div class="comment-card-container">
-			<img class="post-user-image" src="img/user.png" alt="Imagem do utilizador">
-			<p class="post-user-name">Pedro Dias</p>
-			<span class="post-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu
+			<img class="comment-user-image" src="img/user.png" alt="Imagem do utilizador">
+			<p class="comment-user-name">Pedro Dias</p>
+			<span class="comment-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu
 				lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique
 				senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et,
 				sagittis ac, posuere eu, lectus.
-				</span>
-			<span class="post-date">
+			</span>
+			<span class="comment-date">
 				23/11/2020
 			</span>
-			<span class="post-like">
+			<span class="comment-like">
 				<i class="far fa-heart"></i>
 			</span>
 		</div>
 		<hr>
 
 		<div class="comment-card-container">
-			<img class="post-user-image" src="img/user.png" alt="Imagem do utilizador">
-			<p class="post-user-name">Pedro Dias</p>
-			<span class="post-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu
+			<img class="comment-user-image" src="img/user.png" alt="Imagem do utilizador">
+			<p class="comment-user-name">Pedro Dias</p>
+			<span class="comment-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu
 				lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique
 				senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et,
 				sagittis ac, posuere eu, lectus.
 			</span>
-			<span class="post-date">
+			<span class="comment-date">
 				23/11/2020
 			</span>
-			<span class="post-like">
+			<span class="comment-like">
 				<i class="far fa-heart"></i>
 			</span>
 		</div>
 		<hr>
 
 		<div class="comment-card-container">
-			<img class="post-user-image" src="img/user.png" alt="Imagem do utilizador">
-			<p class="post-user-name">Pedro Dias</p>
-			<span class="post-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu
+			<img class="comment-user-image" src="img/user.png" alt="Imagem do utilizador">
+			<p class="comment-user-name">Pedro Dias</p>
+			<span class="comment-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu
 				lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique
 				senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et,
 				sagittis ac, posuere eu, lectus.
 			</span>
-			<span class="post-date">
+			<span class="comment-date">
 				23/11/2020
 			</span>
-			<span class="post-like">
+			<span class="comment-like">
 				<i class="far fa-heart"></i>
 			</span>
 		</div>
