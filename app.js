@@ -10,7 +10,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/atividade', function(req, res) {
-  res.sendFile(__dirname + "/atividade.html");
+  res.sendFile(__dirname + "/activity.html");
 });
 
 app.get('/post', function(req, res) {
@@ -18,11 +18,15 @@ app.get('/post', function(req, res) {
 });
 
 app.get('/noticias', function(req, res) {
-  res.sendFile(__dirname + "/noticias.html");
+  res.sendFile(__dirname + "/news.html");
+});
+
+app.get('/noticia-detalhe', function(req, res) {
+  res.sendFile(__dirname + "/news-detail.html");
 });
 
 app.get('/sobre-nos', function(req, res) {
-  res.sendFile(__dirname + "/sobre-nos.html");
+  res.sendFile(__dirname + "/about-us.html");
 });
 
 app.listen(PORT, function () {

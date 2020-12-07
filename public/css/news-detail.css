@@ -1,0 +1,27 @@
+.news-cover-container {
+  overflow-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  background-color: #ecf3f6;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.news-main-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1024px));
+  justify-content: center;
+}
+
+.news-cover-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.news-cover-text-container {
+  padding: 0;
+}
+
+.news-cover-content {
+  text-align: justify;
+}

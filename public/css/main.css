@@ -67,3 +67,8 @@ footer {
   display: inline-block;
   margin-left: 5px;
 }
+
+footer .email-link {
+  color: #000000;
+  text-decoration: none;
+}
