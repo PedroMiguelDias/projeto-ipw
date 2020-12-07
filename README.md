@@ -2,7 +2,7 @@
 
 https://github.com/PedroMiguelDias/projeto-ipw
 
-## Requirements
+## Requirements to run it locally
 
 Node.js => 14.x or greater
 
