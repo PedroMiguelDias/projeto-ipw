@@ -6,7 +6,7 @@ Node.js => 14.x or greater
 Npm => 6.x or greater
 Nodemon installed globally.
 
-##Running it locally
+## Running it locally
 
 Npm comes bundled with Nodejs, as soon as you install Node, the latest version of NPM will also be installed for you.
 
