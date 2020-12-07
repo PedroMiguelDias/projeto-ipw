@@ -2,7 +2,7 @@
   margin-top: 50px;
   margin-bottom: 50px;
 }
-  
+
 .post-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1024px));
@@ -36,7 +36,7 @@
 }
 
 .post-body {
-    grid-area: post-body;
+  grid-area: post-body;
 }
 
 .post-date {
@@ -64,5 +64,5 @@
     'post-date post-date'
     'post-like post-like';
   grid-column-gap: 20px;
-  padding: 15px 15px 15px 15px;
+  padding: 15px;
 }
