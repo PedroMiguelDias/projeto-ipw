@@ -70,10 +70,6 @@
   }
 }
 
-.overlay, .overlayFade, .news-image-wrapper:hover .overlay {
-  display: none;
-}
-
 .news-text-container {
   padding: 0 10px 0 10px;
 }
