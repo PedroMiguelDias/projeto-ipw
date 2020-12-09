@@ -25,3 +25,9 @@
 .news-cover-content {
   text-align: justify;
 }
+
+.news-cover-date {
+  font-size: 13px;
+  font-style: italic;
+  align-self: end;
+}
