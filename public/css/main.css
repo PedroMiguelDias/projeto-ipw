@@ -1,11 +1,17 @@
 body {
+  font-family: 'Montserrat', sans-serif;
   display: flex;
   flex-direction: column;
   background-color: #ecf3f6;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
   min-height: 100vh;
+}
+
+.site-logo {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
 }
 
 button:focus {
@@ -16,7 +22,7 @@ ul.navbar {
   background-color: #2ea2bf;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .1);
   margin: 0;
-  padding: 0;
+  padding: 10px;
 }
 
 .navbar > li {
@@ -70,5 +76,6 @@ footer {
 
 footer .email-link {
   color: #000000;
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
