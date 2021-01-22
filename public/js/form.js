@@ -1,7 +1,3 @@
-window.onload = function () {
-    showRemainingCharacters();
-}
-
 let showRemainingCharacters = (function () {
     let textareaBox = document.getElementById('postBody');
 
@@ -17,3 +13,5 @@ let showRemainingCharacters = (function () {
         textareaBox.addEventListener('keydown', showRemainingCharacters, false);
     }
 })();
+
+window.addEventListener("load", showRemainingCharacters, false);
