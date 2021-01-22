@@ -8,6 +8,27 @@ body {
   min-height: 100vh;
 }
 
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #2ea2bf;
+  text-underline-offset: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    text-underline-offset: 15px;
+  }
+}
+
+img {
+  vertical-align: unset;
+}
+
 .site-logo {
   max-width: 100%;
   height: auto;
@@ -18,20 +39,20 @@ button:focus {
   outline: none;
 }
 
-ul.navbar {
+ul.navigation-bar {
   background-color: #2ea2bf;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .1);
   margin: 0;
   padding: 10px;
 }
 
-.navbar > li {
+.navigation-bar > li {
   display: inline;
   opacity: 0.7;
   transition: 0.3s;
 }
 
-.navbar a {
+.navigation-bar a {
   color: #fff;
   display: inline-block;
   font-size: 18px;
@@ -39,7 +60,7 @@ ul.navbar {
   text-decoration: none;
 }
 
-.navbar li:hover {
+.navigation-bar li:hover {
   opacity: 1;
 }
 

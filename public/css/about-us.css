@@ -1,0 +1,16 @@
+.aboutus-knowus {
+    font-size: 32px;
+    text-underline-offset: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    .aboutus-knowus {
+        font-size: 48px;
+        text-underline-offset: 15px;
+    }
+}
+
+a.aboutus-creators {
+    color: #2ea2bf;
+    text-decoration: none;
+}

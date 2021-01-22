@@ -1,0 +1,123 @@
+<%- include('partials/header') -%>
+
+<%- include('partials/navbar') -%>
+
+<section id="news-section">
+    <header>
+        <h1 class="news-main-title">Notícias em Destaque</h1>
+    </header>
+
+    <div class="container">
+        <div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselCaptions" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselCaptions" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/img/arvore.jpg" class="d-block w-100 slideshow-image" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/arvore.jpg" class="d-block w-100 slideshow-image" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/arvore.jpg" class="d-block w-100 slideshow-image" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselCaptions" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselCaptions" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="news-container">
+        <article class="news-card-container">
+            <div class="news-image-wrapper">
+                <img class="news-image" src="/img/arvore.jpg" alt="Imagem da notícia">
+                <div class="overlay overlayFade"></div>
+            </div>
+            <div class="news-text-container">
+                <h2 class="news-title"><a href="/noticia-detalhe">Notícia</a></h2>
+                <p class="news-content">Faecis gravitate ardentior ipsa. Ne sed vos fulminibus diffundi cingebant.
+                    Cetera
+                    cesserunt. Sponte ambitae pondus membra neu? Eodem cinxit passim. Perveniunt membra. Figuras sunt
+                    illis.
+                    Nitidis alta orbis feras homo non militis. Congestaque ensis caeli declivia. Montibus gentes
+                    pronaque aquae
+                    fert foret pronaque.
+                </p>
+            </div>
+            <div class="news-date">02/05/2020</div>
+        </article>
+
+        <article class="news-card-container">
+            <div class="news-image-wrapper">
+                <img class="news-image" src="/img/arvore.jpg" alt="Imagem da notícia">
+                <div class="overlay overlayFade"></div>
+            </div>
+            <div class="news-text-container">
+                <h2 class="news-title"><a href="/noticia-detalhe">Notícia</a></h2>
+                <p class="news-content">Faecis gravitate ardentior ipsa. Ne sed vos fulminibus diffundi cingebant.
+                    Cetera
+                    cesserunt. Sponte ambitae pondus membra neu? Eodem cinxit passim. Perveniunt membra. Figuras sunt
+                    illis.
+                    Nitidis alta orbis feras homo non militis. Congestaque ensis caeli declivia. Montibus gentes
+                    pronaque aquae
+                    fert foret pronaque.
+                </p>
+            </div>
+            <div class="news-date">02/05/2020</div>
+        </article>
+
+        <article class="news-card-container">
+            <div class="news-image-wrapper">
+                <img class="news-image" src="/img/arvore.jpg" alt="Imagem da notícia">
+                <div class="overlay overlayFade"></div>
+            </div>
+            <div class="news-text-container">
+                <h2 class="news-title"><a href="/noticia-detalhe">Notícia</a></h2>
+                <p class="news-content">Faecis gravitate ardentior ipsa. Ne sed vos fulminibus diffundi cingebant.
+                    Cetera
+                    cesserunt. Sponte ambitae pondus membra neu? Eodem cinxit passim. Perveniunt membra. Figuras sunt
+                    illis.
+                    Nitidis alta orbis feras homo non militis. Congestaque ensis caeli declivia. Montibus gentes
+                    pronaque aquae
+                    fert foret pronaque.
+                </p>
+            </div>
+            <div class="news-date">02/05/2020</div>
+        </article>
+    </div>
+
+    <form>
+        <div class="news-more">
+            <button class="news-more-button" formaction="noticias">Mais Noticias</button>
+        </div>
+    </form>
+
+</section>
+
+<%- include('partials/footer') -%>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
+
+

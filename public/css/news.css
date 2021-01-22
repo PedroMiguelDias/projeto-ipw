@@ -1,16 +1,3 @@
-.news-main-title {
-  font-size: 48px;
-  text-align: center;
-  text-decoration: underline;
-  text-decoration-color: #2ea2bf;
-  text-underline-offset: 10px;
-}
-
-@media (min-width: 768px) {
-  .news-main-title {
-    text-underline-offset: 15px;
-  }
-}
 #news-section {
   margin-bottom: 50px;
 }
@@ -21,7 +8,7 @@
   flex-direction: column;
   border: 1px solid;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 5px;
   margin: 10px;
   box-shadow: 4px 4px grey;
   overflow-wrap: break-word;
@@ -45,10 +32,22 @@
   object-fit: cover;
 }
 
+.news-title {
+  margin-top: 5px;
+}
+
 .news-title a {
   color: #000000;
   cursor: pointer;
-  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: underline;
+  text-decoration-color: #2ea2bf;
+  text-underline-offset: 2px;
+}
+
+.news-sub-header {
+  margin-top: 10px;
 }
 
 .overlay {
@@ -117,6 +116,7 @@
   color: #fff;
   cursor: pointer;
   font-size: 24px;
+  font-weight: 500;
   margin-top: 50px;
   margin-bottom: 50px;
   padding: 12px;

@@ -1,0 +1,33 @@
+<%- include('partials/header') -%>
+
+<%- include('partials/navbar') -%>
+
+
+<section id="post-comment-section">
+	<article class="post-container">
+		<div class="post-title-container">
+			<a href="/post/<%=title%>"><%=title%></a>
+		</div>
+		<div class="post-card-container">
+			<img class="post-user-image" src="/img/user.png" alt="Imagem do utilizador">
+			<p class="post-user-name"><%=name%></p>
+			<span class="post-body"><%=content%></span>
+			<span class="post-date"><%=date%></span>
+			<span class="post-like">
+				<i class="far fa-heart"></i>
+			</span>
+			<p class="post-like--count">
+				0
+			</p>
+		</div>
+	</article>
+	<hr>
+</section>
+
+<%- include('comments') -%>
+
+
+<%- include('partials/footer') -%>
+<script src="/js/posts.js"></script>
+</body>
+</html>

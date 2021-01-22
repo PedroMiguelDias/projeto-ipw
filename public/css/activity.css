@@ -1,0 +1,11 @@
+.no-activity {
+    font-size: 32px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px)  {
+    .no-activity {
+        font-size: 48px;
+        margin-top: 15px;
+    }
+}

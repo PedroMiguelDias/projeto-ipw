@@ -1,12 +1,17 @@
 #post-section {
-  margin-top: 50px;
   margin-bottom: 50px;
+}
+
+#post-section:first-of-type {
+  margin-top: 50px;
 }
 
 .post-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1024px));
   justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
   padding: 15px;
 }
 
@@ -37,21 +42,30 @@
 
 .post-body {
   grid-area: post-body;
+  font-size: 14px;
+  font-weight: 400;
+  overflow-wrap: break-word;
 }
 
 .post-date {
   font-style: italic;
-  margin-top: 15px;
+  margin-top: 25px;
   grid-area: post-date;
-  grid-column-start: 1;
 }
 
 .post-like {
   cursor: pointer;
-  margin-top: 15px;
+  margin-top: 25px;
   grid-area: post-like;
   grid-row-start: 3;
+  grid-column-start: 4;
+}
+
+.post-like--count {
+  grid-row-start: 4;
   grid-column-start: 3;
+  grid-area: post-count;
+  margin-left: 3px;
 }
 
 .post-card-container {
@@ -59,11 +73,43 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   display: grid;
+  grid-template-columns: 80px 1fr 20px;
   grid-template-areas:
-    'post-image post-user-name'
-    'post-image post-body'
-    'post-date post-date'
-    'post-like post-like';
+    'post-image post-user-name post-user-name post-user-name'
+    'post-image post-body post-body post-body'
+    'post-date post-date post-like post-count';
   grid-column-gap: 20px;
   padding: 15px;
+}
+
+.post-form {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.post-form--field {
+  margin-top: 10px;
+}
+
+#postBody {
+  resize: none;
+}
+
+.post-submit--button {
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 12px;
+  width: 230px;
+  background-color: #2ea2bf;
+}
+
+.fa-heart.fas {
+  transition: transform .4s ease-in-out;
+  transform: rotate3d(0, 1, 0, 180deg);
 }

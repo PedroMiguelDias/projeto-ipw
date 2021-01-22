@@ -1,0 +1,38 @@
+<%- include('partials/header') -%>
+
+<%- include('partials/navbar') -%>
+
+
+<% if (!posts.length) { %>
+    <h1 class="no-activity">Sem atividade recente</h1>
+<% } %>
+<% posts.forEach(function(post) { %>
+
+<article class="post-container">
+    <div class="post-title-container">
+        <a href="/post/<%= post.title %>"><%= post.title %></a>
+    </div>
+    <div class="post-card-container">
+        <img class="post-user-image" src="/img/user.png" alt="Imagem do utilizador">
+        <p class="post-user-name"><%= post.name %></p>
+        <% if (post.content.length > 100) { %>
+        	<span class="post-body"><%= post.content.substring(0, 100) + " ..." %></span>
+        <% } else { %>
+			<span class="post-body"><%= post.content %></span>
+        <% } %>
+        <span class="post-date"><%= post.date %></span>
+        <span class="post-like">
+				<i class="far fa-heart"></i>
+			</span>
+        <p class="post-like--count">0</p>
+    </div>
+</article>
+<hr>
+
+<% }); %>
+
+
+<%- include('partials/footer') -%>
+<script src="/js/posts.js"></script>
+</body>
+</html>

@@ -20,25 +20,36 @@
 
 .comment-body {
   grid-area: comment-body;
+  font-size: 14px;
+  font-weight: 400;
+  overflow-wrap: break-word;
 }
 
 .comment-date {
   font-style: italic;
-  margin-top: 15px;
+  margin-top: 25px;
   grid-area: comment-date;
   grid-column-start: 1;
 }
 
 .comment-like {
   cursor: pointer;
-  margin-top: 15px;
+  margin-top: 25px;
   grid-area: comment-like;
   grid-row-start: 3;
+  grid-column-start: 4;
+}
+
+.comment-like--count {
+  grid-row-start: 4;
   grid-column-start: 3;
+  grid-area: comment-count;
+  margin-left: 3px;
 }
 
 .comment-form {
   display: flex;
+  flex-direction: column;
 }
 
 .comment-main-container {
@@ -50,11 +61,11 @@
 
 .comment-card-container {
   display: grid;
+  grid-template-columns: 80px 1fr 20px;
   grid-template-areas:
-      'comment-image comment-user-name'
-      'comment-image comment-body'
-      'comment-date comment-date'
-      'comment-like comment-like';
+    'comment-image comment-user-name comment-user-name comment-user-name'
+    'comment-image comment-body comment-body comment-body'
+    'comment-date comment-date comment-like comment-count';
   grid-column-gap: 20px;
   padding: 15px;
 }

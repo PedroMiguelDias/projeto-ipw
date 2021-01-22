@@ -1,30 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-pt">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Notícias</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/news.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-	      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
-</head>
-<body>
-<!--[if lt IE 7]>
-<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a>
-	to improve your experience.</p>
-<![endif]-->
-<nav>
-	<ul class="navbar">
-		<li class="menu-link"><a href="/">Home</a></li>
-		<li class="menu-link"><a href="noticias">Notícias</a></li>
-		<li class="menu-link"><a href="atividade">Atividade</a></li>
-	</ul>
-</nav>
+<%- include('partials/header') -%>
+
+<%- include('partials/navbar') -%>
 
 <section id="news-section">
 	<header>
@@ -33,11 +9,11 @@
 	<div class="news-container">
 		<article class="news-card-container">
 			<div class="news-image-wrapper">
-				<img class="news-image" src="img/arvore.jpg" alt="Imagem da notícia">
+				<img class="news-image" src="/img/arvore.jpg" alt="Imagem da notícia">
 				<div class="overlay overlayFade"></div>
 			</div>
 			<div class="news-text-container">
-				<h2 class="news-title"><a href="noticia-detalhe">Notícia</a></h2>
+				<h2 class="news-title"><a href="/noticia-detalhe">Notícia</a></h2>
 				<p class="news-content">Faecis gravitate ardentior ipsa. Ne sed vos fulminibus diffundi cingebant.
 					Cetera
 					cesserunt. Sponte ambitae pondus membra neu? Eodem cinxit passim. Perveniunt membra. Figuras sunt
@@ -52,11 +28,11 @@
 
 		<article class="news-card-container">
 			<div class="news-image-wrapper">
-				<img class="news-image" src="img/arvore.jpg" alt="Imagem da notícia">
+				<img class="news-image" src="/img/arvore.jpg" alt="Imagem da notícia">
 				<div class="overlay overlayFade"></div>
 			</div>
 			<div class="news-text-container">
-				<h2 class="news-title"><a href="noticia-detalhe">Notícia</a></h2>
+				<h2 class="news-title"><a href="/noticia-detalhe">Notícia</a></h2>
 				<p class="news-content">Faecis gravitate ardentior ipsa. Ne sed vos fulminibus diffundi cingebant.
 					Cetera
 					cesserunt. Sponte ambitae pondus membra neu? Eodem cinxit passim. Perveniunt membra. Figuras sunt
@@ -71,11 +47,11 @@
 
 		<article class="news-card-container">
 			<div class="news-image-wrapper">
-				<img class="news-image" src="img/arvore.jpg" alt="Imagem da notícia">
+				<img class="news-image" src="/img/arvore.jpg" alt="Imagem da notícia">
 				<div class="overlay overlayFade"></div>
 			</div>
 			<div class="news-text-container">
-				<h2 class="news-title"><a href="noticia-detalhe">Notícia</a></h2>
+				<h2 class="news-title"><a href="/noticia-detalhe">Notícia</a></h2>
 				<p class="news-content">Faecis gravitate ardentior ipsa. Ne sed vos fulminibus diffundi cingebant.
 					Cetera
 					cesserunt. Sponte ambitae pondus membra neu? Eodem cinxit passim. Perveniunt membra. Figuras sunt
@@ -90,11 +66,11 @@
 
 		<article class="news-card-container">
 			<div class="news-image-wrapper">
-				<img class="news-image" src="img/arvore.jpg" alt="Imagem da notícia">
+				<img class="news-image" src="/img/arvore.jpg" alt="Imagem da notícia">
 				<div class="overlay overlayFade"></div>
 			</div>
 			<div class="news-text-container">
-				<h2 class="news-title"><a href="noticia-detalhe">Notícia</a></h2>
+				<h2 class="news-title"><a href="/noticia-detalhe">Notícia</a></h2>
 				<p class="news-content">Faecis gravitate ardentior ipsa. Ne sed vos fulminibus diffundi cingebant.
 					Cetera
 					cesserunt. Sponte ambitae pondus membra neu? Eodem cinxit passim. Perveniunt membra. Figuras sunt
@@ -109,11 +85,11 @@
 
 		<article class="news-card-container">
 			<div class="news-image-wrapper">
-				<img class="news-image" src="img/arvore.jpg" alt="Imagem da notícia">
+				<img class="news-image" src="/img/arvore.jpg" alt="Imagem da notícia">
 				<div class="overlay overlayFade"></div>
 			</div>
 			<div class="news-text-container">
-				<h2 class="news-title"><a href="noticia-detalhe">Notícia</a></h2>
+				<h2 class="news-title"><a href="/noticia-detalhe">Notícia</a></h2>
 				<p class="news-content">Faecis gravitate ardentior ipsa. Ne sed vos fulminibus diffundi cingebant.
 					Cetera
 					cesserunt. Sponte ambitae pondus membra neu? Eodem cinxit passim. Perveniunt membra. Figuras sunt
@@ -128,11 +104,11 @@
 
 		<article class="news-card-container">
 			<div class="news-image-wrapper">
-				<img class="news-image" src="img/arvore.jpg" alt="Imagem da notícia">
+				<img class="news-image" src="/img/arvore.jpg" alt="Imagem da notícia">
 				<div class="overlay overlayFade"></div>
 			</div>
 			<div class="news-text-container">
-				<h2 class="news-title"><a href="noticia-detalhe">Notícia</a></h2>
+				<h2 class="news-title"><a href="/noticia-detalhe">Notícia</a></h2>
 				<p class="news-content">Faecis gravitate ardentior ipsa. Ne sed vos fulminibus diffundi cingebant.
 					Cetera
 					cesserunt. Sponte ambitae pondus membra neu? Eodem cinxit passim. Perveniunt membra. Figuras sunt
@@ -147,11 +123,11 @@
 
 		<article class="news-card-container">
 			<div class="news-image-wrapper">
-				<img class="news-image" src="img/arvore.jpg" alt="Imagem da notícia">
+				<img class="news-image" src="/img/arvore.jpg" alt="Imagem da notícia">
 				<div class="overlay overlayFade"></div>
 			</div>
 			<div class="news-text-container">
-				<h2 class="news-title"><a href="noticia-detalhe">Notícia</a></h2>
+				<h2 class="news-title"><a href="/noticia-detalhe">Notícia</a></h2>
 				<p class="news-content">Faecis gravitate ardentior ipsa. Ne sed vos fulminibus diffundi cingebant.
 					Cetera
 					cesserunt. Sponte ambitae pondus membra neu? Eodem cinxit passim. Perveniunt membra. Figuras sunt
@@ -166,11 +142,11 @@
 
 		<article class="news-card-container">
 			<div class="news-image-wrapper">
-				<img class="news-image" src="img/arvore.jpg" alt="Imagem da notícia">
+				<img class="news-image" src="/img/arvore.jpg" alt="Imagem da notícia">
 				<div class="overlay overlayFade"></div>
 			</div>
 			<div class="news-text-container">
-				<h2 class="news-title"><a href="noticia-detalhe">Notícia</a></h2>
+				<h2 class="news-title"><a href="/noticia-detalhe">Notícia</a></h2>
 				<p class="news-content">Faecis gravitate ardentior ipsa. Ne sed vos fulminibus diffundi cingebant.
 					Cetera
 					cesserunt. Sponte ambitae pondus membra neu? Eodem cinxit passim. Perveniunt membra. Figuras sunt
@@ -185,11 +161,11 @@
 
 		<article class="news-card-container">
 			<div class="news-image-wrapper">
-				<img class="news-image" src="img/arvore.jpg" alt="Imagem da notícia">
+				<img class="news-image" src="/img/arvore.jpg" alt="Imagem da notícia">
 				<div class="overlay overlayFade"></div>
 			</div>
 			<div class="news-text-container">
-				<h2 class="news-title"><a href="noticia-detalhe">Notícia</a></h2>
+				<h2 class="news-title"><a href="/noticia-detalhe">Notícia</a></h2>
 				<p class="news-content">Faecis gravitate ardentior ipsa. Ne sed vos fulminibus diffundi cingebant.
 					Cetera
 					cesserunt. Sponte ambitae pondus membra neu? Eodem cinxit passim. Perveniunt membra. Figuras sunt
@@ -204,34 +180,6 @@
 	</div>
 </section>
 
-<footer>
-	<div class="footer-wrapper">
-		<div>
-			<img class="footer-icons" src="img/localizacao.png" alt="localizacao">
-			<p>
-				<span>Morada</span> Praceta Dom Afonso 3º 2º ESQ
-			</p>
-		</div>
-		<div>
-			<img class="footer-icons" src="img/telefone.png" alt="telefone">
-			<p>
-				<span>Telefone</span> +351 211 149 501
-			</p>
-		</div>
-		<div>
-			<img class="footer-icons" src="img/email.png" alt="email">
-			<p>
-				<span>E-Mail</span><a class="email-link" href="mailto:support@forum.com">support@forum.com</a>
-			</p>
-		</div>
-		<div>
-			<img class="footer-icons" src="img/smartphone.png" alt="telemovel">
-			<p>
-				<span>Telemóvel</span> +351 962 312 873
-			</p>
-		</div>
-	</div>
-</footer>
-
+<%- include('partials/footer') -%>
 </body>
 </html>
