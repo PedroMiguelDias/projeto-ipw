@@ -1,5 +1,5 @@
 let showRemainingCharacters = (function () {
-    let textareaBox = document.getElementById('postBody');
+    let textareaBox = document.getElementById('descriptionBody');
 
     // We use a closure with a Self Invoked Function to avoid defining a DOM element in the global scope.
     return function () {
