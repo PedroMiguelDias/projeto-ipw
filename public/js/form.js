@@ -17,10 +17,3 @@ let showRemainingCharacters = (function () {
         textareaBox.addEventListener('keydown', showRemainingCharacters, false);
     }
 })();
-
-
-
-
-
-
-

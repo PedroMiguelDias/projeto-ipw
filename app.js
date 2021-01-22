@@ -77,7 +77,6 @@ app.get("/comments", function (req, res) {
 });
 
 app.post("/comments", function (req, res) {
-
     let commentDate = getDate();
 
     // Request the data that was inserted in the form
