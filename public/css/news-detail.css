@@ -5,6 +5,7 @@
   background-color: #ecf3f6;
   overflow: hidden;
   margin: 10px;
+  width: 100%;
 }
 
 .news-main-container {
@@ -13,9 +14,11 @@
   justify-content: center;
 }
 
-.news-cover-image {
-  max-width: 100%;
+.news-image--details {
+  align-self: center;
+  object-fit: cover;
   height: auto;
+  max-width: 100%;
 }
 
 .news-cover-text-container {

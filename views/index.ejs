@@ -16,24 +16,30 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="/img/arvore.jpg" class="d-block w-100 slideshow-image" alt="...">
+                    <img src="/img/covid19_banner.png" class="d-block w-100 slideshow-image" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h5>Portugal com mais 274 mortes e 15.333 novos casos de covid-19</h5>
+                        <p>Desde o início da pandemia, Portugal contabiliza 10.194 mortes e 624.469 casos de infeção
+                            pelo novo coronavírus SARS-CoV-2, estando este sábado ativos mais 5.291 casos em relação a
+                            ontem, totalizando 162.951, os valores mais altos de sempre.
+
+                        </p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="/img/arvore.jpg" class="d-block w-100 slideshow-image" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h5>Incêndios causam 200 milhões de euros de prejuízos anuais</h5>
+                        <p>Prevenir apostando no poder das redes sociais pode ajudar no combate aos fogos e na
+                            preservação da floresta</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="/img/arvore.jpg" class="d-block w-100 slideshow-image" alt="...">
+                    <img src="/img/covid19_teste.jpg" class="d-block w-100 slideshow-image" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <h5>Variante da África do Sul da covid-19 detetada em Portugal</h5>
+                        <p>O caso está localizado, pelas autoridades de saúde, estando a ser feito o rastreio de
+                            contactos e quebrar a cadeia de transmissão.</p>
                     </div>
                 </div>
             </div>
@@ -49,62 +55,23 @@
     </div>
 
     <div class="news-container">
-        <article class="news-card-container">
-            <div class="news-image-wrapper">
-                <img class="news-image" src="/img/arvore.jpg" alt="Imagem da notícia">
-                <div class="overlay overlayFade"></div>
-            </div>
-            <div class="news-text-container">
-                <h2 class="news-title"><a href="/noticia-detalhe">Notícia</a></h2>
-                <p class="news-content">Faecis gravitate ardentior ipsa. Ne sed vos fulminibus diffundi cingebant.
-                    Cetera
-                    cesserunt. Sponte ambitae pondus membra neu? Eodem cinxit passim. Perveniunt membra. Figuras sunt
-                    illis.
-                    Nitidis alta orbis feras homo non militis. Congestaque ensis caeli declivia. Montibus gentes
-                    pronaque aquae
-                    fert foret pronaque.
-                </p>
-            </div>
-            <div class="news-date">02/05/2020</div>
-        </article>
 
-        <article class="news-card-container">
-            <div class="news-image-wrapper">
-                <img class="news-image" src="/img/arvore.jpg" alt="Imagem da notícia">
-                <div class="overlay overlayFade"></div>
-            </div>
-            <div class="news-text-container">
-                <h2 class="news-title"><a href="/noticia-detalhe">Notícia</a></h2>
-                <p class="news-content">Faecis gravitate ardentior ipsa. Ne sed vos fulminibus diffundi cingebant.
-                    Cetera
-                    cesserunt. Sponte ambitae pondus membra neu? Eodem cinxit passim. Perveniunt membra. Figuras sunt
-                    illis.
-                    Nitidis alta orbis feras homo non militis. Congestaque ensis caeli declivia. Montibus gentes
-                    pronaque aquae
-                    fert foret pronaque.
-                </p>
-            </div>
-            <div class="news-date">02/05/2020</div>
-        </article>
+        <% news.forEach(function(newNews) { %>
 
-        <article class="news-card-container">
-            <div class="news-image-wrapper">
-                <img class="news-image" src="/img/arvore.jpg" alt="Imagem da notícia">
-                <div class="overlay overlayFade"></div>
-            </div>
-            <div class="news-text-container">
-                <h2 class="news-title"><a href="/noticia-detalhe">Notícia</a></h2>
-                <p class="news-content">Faecis gravitate ardentior ipsa. Ne sed vos fulminibus diffundi cingebant.
-                    Cetera
-                    cesserunt. Sponte ambitae pondus membra neu? Eodem cinxit passim. Perveniunt membra. Figuras sunt
-                    illis.
-                    Nitidis alta orbis feras homo non militis. Congestaque ensis caeli declivia. Montibus gentes
-                    pronaque aquae
-                    fert foret pronaque.
-                </p>
-            </div>
-            <div class="news-date">02/05/2020</div>
-        </article>
+            <article class="news-card-container">
+                <div class="news-image-wrapper">
+                    <img class="news-image" src="/img/<%= newNews.image %>" alt="Imagem da notícia">
+                    <div class="overlay overlayFade"></div>
+                </div>
+                <div class="news-text-container">
+                    <h2 class="news-title"><a href="/noticia-detalhe/<%= newNews.title %>">Notícia</a></h2>
+                    <p class="news-content"><%= newNews.content %></p>
+                </div>
+                <div class="news-date"><%= newNews.date %></div>
+            </article>
+
+        <% }); %>
+
     </div>
 
     <form>
@@ -116,6 +83,8 @@
 </section>
 
 <%- include('partials/footer') -%>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
 </body>
 </html>

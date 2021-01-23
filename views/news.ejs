@@ -2,183 +2,35 @@
 
 <%- include('partials/navbar') -%>
 
+
 <section id="news-section">
-	<header>
-		<h1 class="news-main-title">Todas as Notícias</h1>
-	</header>
-	<div class="news-container">
-		<article class="news-card-container">
-			<div class="news-image-wrapper">
-				<img class="news-image" src="/img/arvore.jpg" alt="Imagem da notícia">
-				<div class="overlay overlayFade"></div>
-			</div>
-			<div class="news-text-container">
-				<h2 class="news-title"><a href="/noticia-detalhe">Notícia</a></h2>
-				<p class="news-content">Faecis gravitate ardentior ipsa. Ne sed vos fulminibus diffundi cingebant.
-					Cetera
-					cesserunt. Sponte ambitae pondus membra neu? Eodem cinxit passim. Perveniunt membra. Figuras sunt
-					illis.
-					Nitidis alta orbis feras homo non militis. Congestaque ensis caeli declivia. Montibus gentes
-					pronaque aquae
-					fert foret pronaque.
-				</p>
-			</div>
-			<div class="news-date">02/05/2020</div>
-		</article>
+    <header>
+        <h1 class="news-main-title">Todas as Notícias</h1>
+    </header>
+    <div class="news-container">
 
-		<article class="news-card-container">
-			<div class="news-image-wrapper">
-				<img class="news-image" src="/img/arvore.jpg" alt="Imagem da notícia">
-				<div class="overlay overlayFade"></div>
-			</div>
-			<div class="news-text-container">
-				<h2 class="news-title"><a href="/noticia-detalhe">Notícia</a></h2>
-				<p class="news-content">Faecis gravitate ardentior ipsa. Ne sed vos fulminibus diffundi cingebant.
-					Cetera
-					cesserunt. Sponte ambitae pondus membra neu? Eodem cinxit passim. Perveniunt membra. Figuras sunt
-					illis.
-					Nitidis alta orbis feras homo non militis. Congestaque ensis caeli declivia. Montibus gentes
-					pronaque aquae
-					fert foret pronaque.
-				</p>
-			</div>
-			<div class="news-date">02/05/2020</div>
-		</article>
+        <% news.forEach(function(newNews) { %>
 
-		<article class="news-card-container">
-			<div class="news-image-wrapper">
-				<img class="news-image" src="/img/arvore.jpg" alt="Imagem da notícia">
-				<div class="overlay overlayFade"></div>
-			</div>
-			<div class="news-text-container">
-				<h2 class="news-title"><a href="/noticia-detalhe">Notícia</a></h2>
-				<p class="news-content">Faecis gravitate ardentior ipsa. Ne sed vos fulminibus diffundi cingebant.
-					Cetera
-					cesserunt. Sponte ambitae pondus membra neu? Eodem cinxit passim. Perveniunt membra. Figuras sunt
-					illis.
-					Nitidis alta orbis feras homo non militis. Congestaque ensis caeli declivia. Montibus gentes
-					pronaque aquae
-					fert foret pronaque.
-				</p>
-			</div>
-			<div class="news-date">02/05/2020</div>
-		</article>
+        <article class="news-card-container">
+            <div class="news-image-wrapper">
+                <img class="news-image" src="/img/<%=newNews.image%>" alt="Imagem da notícia">
+                <div class="overlay overlayFade"></div>
+            </div>
+            <div class="news-text-container">
+                <h2 class="news-title"><a href="/noticia-detalhe/<%=newNews.title%>"><%=newNews.title%></a></h2>
+                <p class="news-content"><%=newNews.content%>
+                </p>
+            </div>
+            <div class="news-date"><%=newNews.date%></div>
+        </article>
 
-		<article class="news-card-container">
-			<div class="news-image-wrapper">
-				<img class="news-image" src="/img/arvore.jpg" alt="Imagem da notícia">
-				<div class="overlay overlayFade"></div>
-			</div>
-			<div class="news-text-container">
-				<h2 class="news-title"><a href="/noticia-detalhe">Notícia</a></h2>
-				<p class="news-content">Faecis gravitate ardentior ipsa. Ne sed vos fulminibus diffundi cingebant.
-					Cetera
-					cesserunt. Sponte ambitae pondus membra neu? Eodem cinxit passim. Perveniunt membra. Figuras sunt
-					illis.
-					Nitidis alta orbis feras homo non militis. Congestaque ensis caeli declivia. Montibus gentes
-					pronaque aquae
-					fert foret pronaque.
-				</p>
-			</div>
-			<div class="news-date">02/05/2020</div>
-		</article>
+        <% }); %>
 
-		<article class="news-card-container">
-			<div class="news-image-wrapper">
-				<img class="news-image" src="/img/arvore.jpg" alt="Imagem da notícia">
-				<div class="overlay overlayFade"></div>
-			</div>
-			<div class="news-text-container">
-				<h2 class="news-title"><a href="/noticia-detalhe">Notícia</a></h2>
-				<p class="news-content">Faecis gravitate ardentior ipsa. Ne sed vos fulminibus diffundi cingebant.
-					Cetera
-					cesserunt. Sponte ambitae pondus membra neu? Eodem cinxit passim. Perveniunt membra. Figuras sunt
-					illis.
-					Nitidis alta orbis feras homo non militis. Congestaque ensis caeli declivia. Montibus gentes
-					pronaque aquae
-					fert foret pronaque.
-				</p>
-			</div>
-			<div class="news-date">02/05/2020</div>
-		</article>
+    </div>
 
-		<article class="news-card-container">
-			<div class="news-image-wrapper">
-				<img class="news-image" src="/img/arvore.jpg" alt="Imagem da notícia">
-				<div class="overlay overlayFade"></div>
-			</div>
-			<div class="news-text-container">
-				<h2 class="news-title"><a href="/noticia-detalhe">Notícia</a></h2>
-				<p class="news-content">Faecis gravitate ardentior ipsa. Ne sed vos fulminibus diffundi cingebant.
-					Cetera
-					cesserunt. Sponte ambitae pondus membra neu? Eodem cinxit passim. Perveniunt membra. Figuras sunt
-					illis.
-					Nitidis alta orbis feras homo non militis. Congestaque ensis caeli declivia. Montibus gentes
-					pronaque aquae
-					fert foret pronaque.
-				</p>
-			</div>
-			<div class="news-date">02/05/2020</div>
-		</article>
 
-		<article class="news-card-container">
-			<div class="news-image-wrapper">
-				<img class="news-image" src="/img/arvore.jpg" alt="Imagem da notícia">
-				<div class="overlay overlayFade"></div>
-			</div>
-			<div class="news-text-container">
-				<h2 class="news-title"><a href="/noticia-detalhe">Notícia</a></h2>
-				<p class="news-content">Faecis gravitate ardentior ipsa. Ne sed vos fulminibus diffundi cingebant.
-					Cetera
-					cesserunt. Sponte ambitae pondus membra neu? Eodem cinxit passim. Perveniunt membra. Figuras sunt
-					illis.
-					Nitidis alta orbis feras homo non militis. Congestaque ensis caeli declivia. Montibus gentes
-					pronaque aquae
-					fert foret pronaque.
-				</p>
-			</div>
-			<div class="news-date">02/05/2020</div>
-		</article>
-
-		<article class="news-card-container">
-			<div class="news-image-wrapper">
-				<img class="news-image" src="/img/arvore.jpg" alt="Imagem da notícia">
-				<div class="overlay overlayFade"></div>
-			</div>
-			<div class="news-text-container">
-				<h2 class="news-title"><a href="/noticia-detalhe">Notícia</a></h2>
-				<p class="news-content">Faecis gravitate ardentior ipsa. Ne sed vos fulminibus diffundi cingebant.
-					Cetera
-					cesserunt. Sponte ambitae pondus membra neu? Eodem cinxit passim. Perveniunt membra. Figuras sunt
-					illis.
-					Nitidis alta orbis feras homo non militis. Congestaque ensis caeli declivia. Montibus gentes
-					pronaque aquae
-					fert foret pronaque.
-				</p>
-			</div>
-			<div class="news-date">02/05/2020</div>
-		</article>
-
-		<article class="news-card-container">
-			<div class="news-image-wrapper">
-				<img class="news-image" src="/img/arvore.jpg" alt="Imagem da notícia">
-				<div class="overlay overlayFade"></div>
-			</div>
-			<div class="news-text-container">
-				<h2 class="news-title"><a href="/noticia-detalhe">Notícia</a></h2>
-				<p class="news-content">Faecis gravitate ardentior ipsa. Ne sed vos fulminibus diffundi cingebant.
-					Cetera
-					cesserunt. Sponte ambitae pondus membra neu? Eodem cinxit passim. Perveniunt membra. Figuras sunt
-					illis.
-					Nitidis alta orbis feras homo non militis. Congestaque ensis caeli declivia. Montibus gentes
-					pronaque aquae
-					fert foret pronaque.
-				</p>
-			</div>
-			<div class="news-date">02/05/2020</div>
-		</article>
-	</div>
 </section>
+
 
 <%- include('partials/footer') -%>
 </body>
