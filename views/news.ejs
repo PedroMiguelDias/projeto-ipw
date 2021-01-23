@@ -5,7 +5,11 @@
 
 <section id="news-section">
     <header>
-        <h1 class="news-main-title">Todas as Notícias</h1>
+        <% if (!news.length) { %>
+            <h1 class="news-main-title">Não existem notícias ainda publicadas</h1>
+        <% } else { %>
+            <h1 class="news-main-title">Todas as Notícias</h1>
+        <% } %>
     </header>
     <div class="news-container">
 
@@ -27,10 +31,7 @@
         <% }); %>
 
     </div>
-
-
 </section>
-
 
 <%- include('partials/footer') -%>
 </body>
