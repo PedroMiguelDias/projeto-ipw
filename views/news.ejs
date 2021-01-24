@@ -15,18 +15,20 @@
 
         <% news.forEach(function(newNews) { %>
 
-        <article class="news-card-container">
-            <div class="news-image-wrapper">
-                <img class="news-image" src="/img/<%=newNews.image%>" alt="Imagem da notícia">
-                <div class="overlay overlayFade"></div>
-            </div>
-            <div class="news-text-container">
-                <h2 class="news-title"><a href="/noticia-detalhe/<%=newNews.title%>"><%=newNews.title%></a></h2>
-                <p class="news-content"><%=newNews.content%>
-                </p>
-            </div>
-            <div class="news-date"><%=newNews.date%></div>
-        </article>
+        <a href="/noticia-detalhe/<%= newNews.title %>">
+            <article class="news-card-container">
+                <div class="news-image-wrapper">
+                    <img class="news-image" src="/img/<%= newNews.image %>" alt="Imagem da notícia">
+                    <div class="overlay overlayFade"></div>
+                </div>
+                <div class="news-text-container">
+                    <h2 class="news-title"><%= newNews.title %></h2>
+                    <p class="news-content"><%= newNews.content %>
+                    </p>
+                </div>
+                <div class="news-date"><%= newNews.date %></div>
+            </article>
+        </a>
 
         <% }); %>
 

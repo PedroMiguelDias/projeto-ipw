@@ -3,67 +3,70 @@
 <%- include('partials/navbar') -%>
 
 <section id="post-comment-section">
-	<article class="post-container">
-		<div class="post-title-container">
-			<a href="/post/<%=title%>"><%=title%></a>
-		</div>
-		<div class="post-card-container">
-			<img class="post-user-image" src="/img/user.png" alt="Imagem do utilizador">
-			<p class="post-user-name"><%=name%></p>
-			<span class="post-body"><%=content%></span>
-			<span class="post-date"><%=date%></span>
-			<span class="post-like">
-				<i class="far fa-heart"></i>
-			</span>
-			<p class="post-like--count">
-				0
-			</p>
-		</div>
-	</article>
-	<hr>
+    <article class="post-container">
+        <a href="/post/<%= title %>">
+            <div class="post-title-container">
+                <%= title %>
+            </div>
+        </a>
+        <div class="post-card-container">
+            <img class="post-user-image" src="/img/user.png" alt="Imagem do utilizador">
+            <p class="post-user-name"><%= name %></p>
+            <span class="post-body"><%= content %></span>
+            <span class="post-date"><%= date %></span>
+            <span class="post-like">
+				    <i class="far fa-heart"></i>
+			    </span>
+            <p class="post-like--count">
+                0
+            </p>
+        </div>
+    </article>
+    <hr>
 </section>
 
 
 <section id="comment-section">
-	<% comments.forEach(function(comment) { %>
-	<% if(comment.commentPost === title) { %>
-		<div class="comment-main-container">
-			<div class="comment-card-container">
-				<img class="comment-user-image" src="/img/user.png" alt="Imagem do utilizador">
-				<p class="comment-user-name"><%= comment.commentName %></p>
-				<span class="comment-body"><%= comment.commentContent %></span>
-				<span class="comment-date"><%= comment.commentDate %></span>
-				<span class="comment-like">
+    <% comments.forEach(function(comment) { %>
+        <% if(comment.commentPost === title) { %>
+            <div class="comment-main-container">
+                <div class="comment-card-container">
+                    <img class="comment-user-image" src="/img/user.png" alt="Imagem do utilizador">
+                    <p class="comment-user-name"><%= comment.commentName %></p>
+                    <span class="comment-body"><%= comment.commentContent %></span>
+                    <span class="comment-date"><%= comment.commentDate %></span>
+                    <span class="comment-like">
 					<i class="far fa-heart"></i>
 				</span>
-				<p class="comment-like--count">
-					0
-				</p>
-			</div>
-			<hr>
-		</div>
-	<% } %>
-	<% }); %>
+                    <p class="comment-like--count">
+                        0
+                    </p>
+                </div>
+                <hr>
+            </div>
+        <% } %>
+    <% }); %>
 </section>
 
-<form class="container post-form" action="/post/<%=title%>" method="POST">
-	<div class="comment-indicator">
-		<h2>Escreve aqui um comentário:</h2>
-	</div>
-	<div class="form-group">
-		<label for="name">Nome de utilizador</label>
-		<input type="text" class="form-control" name="commentUsername" maxlength="40" id="name" required>
-		<input type="hidden" name="commentPost" value="<%=title%>">
-	</div>
-	<div class="form-group post-form--field">
-		<label for="descriptionBody">Texto</label>
-		<textarea class="form-control" name="commentBody" id="descriptionBody" rows="5" maxlength="1000" required></textarea>
-		<div>
-			<div id="charactersRemaining"></div>
-		</div>
-	</div>
+<form class="container post-form" action="/post/<%= title %>" method="POST">
+    <div class="comment-indicator">
+        <h2>Escreve aqui um comentário:</h2>
+    </div>
+    <div class="form-group">
+        <label for="name">Nome de utilizador</label>
+        <input type="text" class="form-control" name="commentUsername" maxlength="40" id="name" required>
+        <input type="hidden" name="commentPost" value="<%= title %>">
+    </div>
+    <div class="form-group post-form--field">
+        <label for="descriptionBody">Texto</label>
+        <textarea class="form-control" name="commentBody" id="descriptionBody" rows="5" maxlength="1000"
+                  required></textarea>
+        <div>
+            <div id="charactersRemaining"></div>
+        </div>
+    </div>
 
-	<button class="comment-submit" type="submit" name="button">Publicar</button>
+    <button class="comment-submit" type="submit" name="button">Publicar</button>
 </form>
 
 <%- include('partials/footer') -%>

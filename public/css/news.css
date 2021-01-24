@@ -33,21 +33,18 @@
 }
 
 .news-title {
-  margin-top: 5px;
-}
-
-.news-title a {
   color: #000000;
   cursor: pointer;
   font-weight: bold;
   font-size: 24px;
+  margin-top: 7px;
   text-decoration: underline;
   text-decoration-color: #2ea2bf;
   text-underline-offset: 5px;
 }
 
 @media screen and (min-width: 768px) {
-  .news-title a {
+  .news-title {
     text-underline-offset: 7px;
   }
 }

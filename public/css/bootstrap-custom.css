@@ -1,5 +1,12 @@
 .carousel {
-    margin-bottom: 100px;
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .carousel {
+        display: block;
+        margin-bottom: 100px;
+    }
 }
 
 .carousel-item {

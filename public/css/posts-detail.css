@@ -1,3 +1,17 @@
+a {
+  color: #212529;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #212529;
+  text-decoration: none;
+}
+
+a .post-title-container {
+  color: #ffffff;
+}
+
 #post-section {
   margin-bottom: 50px;
 }

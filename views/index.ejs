@@ -16,7 +16,8 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="/img/covid19_banner.png" class="d-block w-100 slideshow-image" alt="Banner com logo de covid">
+                    <img src="/img/covid19_banner.png" class="d-block w-100 slideshow-image"
+                         alt="Banner com logo de covid">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Portugal com mais 274 mortes e 15.333 novos casos de covid-19</h5>
                         <p>Desde o início da pandemia, Portugal contabiliza 10.194 mortes e 624.469 casos de infeção
@@ -35,7 +36,8 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="/img/covid19_teste.jpg" class="d-block w-100 slideshow-image" alt="Pessoa a fazer teste covid">
+                    <img src="/img/covid19_teste.jpg" class="d-block w-100 slideshow-image"
+                         alt="Pessoa a fazer teste covid">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Variante da África do Sul da covid-19 detetada em Portugal</h5>
                         <p>O caso está localizado, pelas autoridades de saúde, estando a ser feito o rastreio de
@@ -58,17 +60,19 @@
 
         <% news.forEach(function(newNews) { %>
 
-            <article class="news-card-container">
-                <div class="news-image-wrapper">
-                    <img class="news-image" src="/img/<%= newNews.image %>" alt="Imagem da notícia">
-                    <div class="overlay overlayFade"></div>
-                </div>
-                <div class="news-text-container">
-                    <h2 class="news-title"><a href="/noticia-detalhe/<%= newNews.title %>">Notícia</a></h2>
-                    <p class="news-content"><%= newNews.content %></p>
-                </div>
-                <div class="news-date"><%= newNews.date %></div>
-            </article>
+            <a href="/noticia-detalhe/<%= newNews.title %>">
+                <article class="news-card-container">
+                    <div class="news-image-wrapper">
+                        <img class="news-image" src="/img/<%= newNews.image %>" alt="Imagem da notícia">
+                        <div class="overlay overlayFade"></div>
+                    </div>
+                    <div class="news-text-container">
+                        <h2 class="news-title"><%= newNews.title %></h2>
+                        <p class="news-content"><%= newNews.content %></p>
+                    </div>
+                    <div class="news-date"><%= newNews.date %></div>
+                </article>
+            </a>
 
         <% }); %>
 
