@@ -117,26 +117,21 @@ app.get("/compose-news", function (req, res) {
     });
 });
 
-app.get("/comments", function (req, res) {
-    res.render("comments", {
-        comments: comments
-    });
-});
-
-app.post("/comments", function (req, res) {
+app.post("/post/:postName", function (req, res) {
     let commentDate = getDate();
 
     // Request the data that was inserted in the form
     const comment = {
         commentName: req.body.commentUsername,
         commentContent: req.body.commentBody,
-        commentDate: commentDate
+        commentDate: commentDate,
+        commentPost: req.body.commentPost
     };
 
     comments.push(comment);
 
     res.redirect("back");
-});
+})
 
 app.post("/compose", function (req, res) {
     let postDate = getDate();
